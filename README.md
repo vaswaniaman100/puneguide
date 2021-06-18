@@ -1,5 +1,1 @@
-# puneguideasa
-asas
-as
-asasa
-a
+# puneguide
