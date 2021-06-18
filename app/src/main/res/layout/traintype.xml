@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/trainbetweenstations"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:text="trains between stations"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/localtraintimetable"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:text="local train timetable"
+        android:textSize="24sp" />
+</LinearLayout>

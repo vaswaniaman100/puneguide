@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name = "yellow">#5B69F0</color>
+
+    <color name = "primaryPressed">@android:color/darker_gray</color>
+    <color name = "primaryFocused">@android:color/darker_gray</color>
+    <color name = "rippleback">@android:color/transparent</color>
+</resources>

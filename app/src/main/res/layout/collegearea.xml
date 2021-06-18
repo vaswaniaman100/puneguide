@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/shivajinagarcollege"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="-4px"
+        android:layout_marginTop="-6px"
+        android:layout_marginRight="-4px"
+        android:layout_marginBottom="-14px"
+        android:text="Shivajinagar"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/deccancollege"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="-4px"
+        android:layout_marginTop="-6px"
+        android:layout_marginRight="-4px"
+        android:layout_marginBottom="-14px"
+        android:text="Deccan"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/fcroadcollege"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="-4px"
+        android:layout_marginTop="-6px"
+        android:layout_marginRight="-4px"
+        android:layout_marginBottom="-14px"
+        android:text="fc road"
+        android:textSize="18sp" />
+
+</LinearLayout>

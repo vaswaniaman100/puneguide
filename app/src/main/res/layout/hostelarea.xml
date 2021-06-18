@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/shivajinagarhostel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="shivajinagar"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/deccanhostel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deccan"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/fcroadhostel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fc road"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".main.tab1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Pune Guide "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:scrollY="0dp">
+
+            <Button
+                android:id="@+id/hos"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/transport"
+                android:text="TRANSPORT"
+                app:layout_constraintBottom_toTopOf="@+id/traintype"
+                app:layout_constraintEnd_toStartOf="@+id/hostelarea"
+                app:layout_constraintStart_toEndOf="@id/collegearea"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/hostelarea"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+
+
+                android:layout_marginStart="12dp"
+
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/hostel"
+                android:text="HOSTELS"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hos"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/collegearea"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/college"
+                android:text="COLLEGES"
+                app:layout_constraintBottom_toTopOf="@+id/hotelarea"
+                app:layout_constraintEnd_toStartOf="@+id/hos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/emergency"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="162dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/emergency"
+                android:text="EMERGENCY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button12"
+                app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/airport"
+                android:text="AIRPORT"
+                app:layout_constraintBottom_toTopOf="@+id/button9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/traintype"
+                app:layout_constraintTop_toBottomOf="@+id/hostelarea" />
+
+            <Button
+                android:id="@+id/hotelarea"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"
+
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/hotel1"
+                android:text="HOTELS"
+                app:layout_constraintBottom_toTopOf="@+id/hospitalarea"
+                app:layout_constraintEnd_toStartOf="@+id/traintype"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collegearea" />
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="265dp"
+                android:layout_marginRight="265dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/theater"
+                android:text="THEATER"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+            <Button
+                android:id="@+id/traintype"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/train"
+                android:text="TRAIN"
+                app:layout_constraintBottom_toTopOf="@+id/shopping"
+                app:layout_constraintEnd_toStartOf="@+id/button"
+                app:layout_constraintStart_toEndOf="@+id/hotelarea"
+                app:layout_constraintTop_toBottomOf="@+id/hos" />
+
+            <Button
+                android:id="@+id/shopping"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/shopping"
+                android:text="SHOPPING"
+                app:layout_constraintBottom_toTopOf="@+id/button12"
+                app:layout_constraintEnd_toStartOf="@+id/button9"
+                app:layout_constraintHorizontal_bias="0.537"
+                app:layout_constraintStart_toEndOf="@+id/hospitalarea"
+                app:layout_constraintTop_toBottomOf="@+id/traintype" />
+
+            <Button
+                android:id="@+id/hospitalarea"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/hospital"
+                android:text="HOSPITALS"
+                app:layout_constraintBottom_toTopOf="@+id/button11"
+                app:layout_constraintEnd_toStartOf="@+id/shopping"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotelarea" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tourist1"
+                android:text="TOURIST PLACES"
+                app:layout_constraintBottom_toTopOf="@+id/emergency"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/shopping"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/religion1"
+                android:text="RELIGION"
+                app:layout_constraintBottom_toTopOf="@+id/button6"
+                app:layout_constraintEnd_toStartOf="@+id/button12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hospitalarea" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="162dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/books"
+                android:text="BOOK MARKET"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/emergency"
+                app:layout_constraintStart_toEndOf="@+id/button11"
+                app:layout_constraintTop_toBottomOf="@+id/shopping" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</LinearLayout>
