@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.puneguide">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:label="AIRPORT" android:name=".airport.airport" android:parentActivityName=".main.MainActivity" />
+
+        <activity android:label="HOSPITALS" android:name=".hospital.hospitallist"  android:parentActivityName=".hospital.hospitalarea" />
+        <activity android:label="HOSPITALS" android:name=".hospital.hospitalarea" android:parentActivityName=".main.MainActivity" />
+        <activity android:label="HOSPITALS" android:name=".hospital.hospitaldata"  android:parentActivityName=".hospital.hospitallist"/>
+
+        <activity android:label="COLLEGES" android:name=".college.collegearea" android:parentActivityName=".main.MainActivity" />
+        <activity android:label="COLLEGES" android:name=".college.collegelist" android:parentActivityName=".college.collegearea"  />
+        <activity android:label="COLLEGES" android:name=".college.collegedata" android:parentActivityName=".college.collegelist" />
+
+        <activity android:label="HOSTELS" android:name=".hostel.hostelarea"  android:parentActivityName=".main.MainActivity"  />
+        <activity android:label="HOSTELS" android:name=".hostel.hostellist"  android:parentActivityName=".hostel.hostelarea" />
+        <activity android:label="HOSTELS" android:name=".hostel.hosteldata"  android:parentActivityName=".hostel.hostellist"/>
+
+        <activity android:label="HOTELS" android:name=".hotel.hotelarea"  android:parentActivityName=".main.MainActivity"  />
+        <activity android:label="HOTELS" android:name=".hotel.hotellist"  android:parentActivityName=".hotel.hotelarea" />
+        <activity android:label="HOTELS" android:name=".hotel.hoteldata"  android:parentActivityName=".hotel.hotellist"/>
+
+        <activity android:label="TRAINS" android:name=".train.traintype" android:parentActivityName=".main.MainActivity" />
+        <activity android:label="TRAINS" android:name=".train.trainbetweenstations" android:parentActivityName=".train.traintype" />
+        <activity android:label="TRAINS" android:name=".train.trainlist" android:parentActivityName=".train.trainbetweenstations" />
+        <activity android:label="TRAINS" android:name=".train.traintimings" android:parentActivityName=".train.trainlist" />
+        <activity android:label="TRAINS" android:name=".train.localtraintimetable" android:parentActivityName=".train.traintype" />
+
+        <activity android:label="EMERGENCY NO" android:name=".emergencynos.emergencyno" android:parentActivityName=".main.MainActivity"  />
+
+        <activity android:label="SHOPPING" android:name=".shopping.shopping" android:parentActivityName=".main.MainActivity" />
+        <activity android:label="MARKET AREA" android:name=".shopping.shoppingmarketlist" android:parentActivityName=".shopping.shopping" />
+        <activity android:label="MARKET AREA" android:name=".shopping.shoppinmarketdata" android:parentActivityName=".shopping.shoppingmarketlist" />
+
+        <activity android:label="MALLS" android:name=".shopping.mallslist"/>
+        <activity android:label="MALLS" android:name=".shopping.mallsdata"/>
+
+        <activity android:label="TOURIST PLACES" android:name=".tourist.touristplacedata"/>
+        <activity android:label="TOURIST PLACES" android:name=".tourist.touristplaceslist"/>
+
+        <activity android:label="THEATERS" android:name=".theaters.theatersdata"/>
+        <activity android:label="THEATERS" android:name=".theaters.theaterslist"/>
+
+        <activity android:label="RELIGIOUS PLACES" android:name=".religiousplaces.religiousplacesnamelist"/>
+        <activity android:label="RELIGIOUS PLACES" android:name=".religiousplaces.religiousplacestypelist"/>
+        <activity android:label="RELIGIOUS PLACES" android:name=".religiousplaces.religiousplacesdata"/>
+
+        <activity android:label="BUS" android:name=".bus.busbetweenstands"/>
+        <activity android:label="BUS" android:name=".bus.buslist"/>
+        <activity android:label="BUS" android:name=".bus.bustimings"/>
+
+        <activity android:label="TRANSPORT" android:name=".transport.transport"/>
+        <activity android:label="TRANSPORT" android:name=".transport.transportcab"/>
+        <activity android:label="TRANSPORT" android:name=".transport.transportbus"/>
+        <activity android:label="TRANSPORT" android:name=".transport.transportrickshaw" launchMode='singleTask' />
+
+        <activity android:label="BOOK MARKET" android:name=".bookmarket" android:parentActivityName=".main.MainActivity" />
+
+
+    </application>
+
+</manifest>

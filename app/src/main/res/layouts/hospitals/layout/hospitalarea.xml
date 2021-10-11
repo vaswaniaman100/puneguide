@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/shivajinagarhospital"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="-4px"
+        android:layout_marginTop="-6px"
+        android:layout_marginRight="-4px"
+        android:layout_marginBottom="-14px"
+        android:text="shivajinagar"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/deccanhospital"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="-4px"
+        android:layout_marginTop="-6px"
+        android:layout_marginRight="-4px"
+        android:layout_marginBottom="-14px"
+        android:text="Deccan"
+        android:textSize="18sp"
+
+        />
+
+    <Button
+        android:id="@+id/fcroadhospital"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="-4px"
+        android:layout_marginTop="-6px"
+        android:layout_marginRight="-4px"
+        android:layout_marginBottom="-14px"
+        android:text="Fc road"
+        android:textSize="18sp" />
+
+</LinearLayout>

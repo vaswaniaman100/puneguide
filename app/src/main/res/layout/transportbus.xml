@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:scrollY="0dp">
+
+            <TextView
+                android:id="@+id/bustable"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="PMPL buses pune"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:text="\t\t\tPune Mahanagar Parivahan Mahamandal Ltd (PMPML, lit. Pune Metropolitan Transport Corporation), is the public transport bus service provider for the city of Pune (PMC and PCMC Limits). Prior to its foundation on 19 October 2007, the twin cities were served by two separate providers, viz. the Pune Municipal Transport (PMT) and the Pimpri Chinchwad Municipal Transport (PCMT).It operates 371 routes within a radius of 20 km around the two cities, including 51 Rainbow BRT routes that at least partially ply on the 4 bus rapid transit corridors.  \n\t\t\tNow in 2019 PmpmL has introduced Electric AC Buses in Normal fare which is consist of 9 mtr as well as 12 mtr"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:srcCompat="@drawable/bus1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
